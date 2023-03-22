@@ -26,6 +26,11 @@ public class LocalTrain implements Prototype<LocalTrain> {
     public LocalTrain() {
     }
 
+    @Override
+    public LocalTrain clone() {
+        return new LocalTrain(this);
+    }
+
     public int getFare() {
         return fare;
     }
@@ -72,11 +77,6 @@ public class LocalTrain implements Prototype<LocalTrain> {
 
     public void setStation(String station) {
         this.station = station;
-    }
-
-    @Override
-    public LocalTrain clone() {
-        return new LocalTrain(this);
     }
 
     @Override
