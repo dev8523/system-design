@@ -1,4 +1,6 @@
-package designpatterns;
+package designpatterns.prototype.registry;
+
+import designpatterns.prototype.LocalTrain;
 
 import java.util.HashMap;
 import java.util.Map;
