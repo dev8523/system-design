@@ -1,4 +1,6 @@
-package designpatterns;
+package designpatterns.prototype;
+
+import designpatterns.prototype.registry.LocalTrainRegistry;
 
 public class Client {
     public static void main(String[] args) {
