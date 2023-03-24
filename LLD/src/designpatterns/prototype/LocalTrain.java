@@ -1,4 +1,4 @@
-package designpatterns;
+package designpatterns.prototype;
 
 /**
  * local trains in Mumbai
