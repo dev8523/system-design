@@ -6,3 +6,5 @@ We will have below design patterns implemented with examples:
 - Builder
 - Prototype
 - Registry
+- Adapter
+- Facade
