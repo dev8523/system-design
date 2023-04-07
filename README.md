@@ -8,3 +8,4 @@ We will have below design patterns implemented with examples:
 - Registry
 - Adapter
 - Facade
+- Observer
