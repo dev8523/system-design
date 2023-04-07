@@ -1,19 +1,29 @@
 package designpatterns.observer;
 
+import designpatterns.singleton.SingletonInMultiThreading;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Amazon {
-    private final List<OrderPlacedSubscriber> orderPlacedSubscribers;
     private static Amazon instance;
+    private final List<OrderPlacedSubscriber> orderPlacedSubscribers;
 
     private Amazon() {
         this.orderPlacedSubscribers = new ArrayList<>();
     }
 
-    public static Amazon getInstance() { //TODO -> make it thread safe
-        if (instance == null)
-            instance = new Amazon();
+    /**
+     * Thread safe singleton design pattern
+     */
+    public static Amazon getInstance() {
+        if (instance == null) {
+            synchronized (Amazon.class) {
+                if (instance == null) {
+                    instance = new Amazon();
+                }
+            }
+        }
         return instance;
     }
 

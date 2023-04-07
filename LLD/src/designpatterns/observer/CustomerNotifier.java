@@ -14,5 +14,4 @@ public class CustomerNotifier implements OrderPlacedSubscriber {
         return returnData;
     }
 
-
 }
