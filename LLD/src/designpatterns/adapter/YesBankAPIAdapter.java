@@ -1,10 +1,10 @@
 package designpatterns.adapter;
 
-import designPatterns.adapter.bankPlatforms.YesBankApi;
+import designpatterns.adapter.bankPlatforms.YesBankApi;
 
 public class YesBankAPIAdapter implements BankAPIAdapter {
 
-    private YesBankApi yesBankApi;
+    private final YesBankApi yesBankApi;
 
     public YesBankAPIAdapter() {
         this.yesBankApi = new YesBankApi();

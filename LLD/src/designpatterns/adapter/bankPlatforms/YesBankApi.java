@@ -1,15 +1,15 @@
 package designpatterns.adapter.bankPlatforms;
 
 public class YesBankApi {
-    public double checkBalance(){
+    public double checkBalance() {
         return 0.00;
     }
 
-    public boolean authenticateUser(){
+    public boolean authenticateUser() {
         return true;
     }
 
-    public boolean transaction(){
+    public boolean transaction() {
         return true;
     }
 }

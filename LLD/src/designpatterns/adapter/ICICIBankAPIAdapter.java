@@ -1,10 +1,10 @@
 package designpatterns.adapter;
 
-import designPatterns.adapter.bankPlatforms.ICICIBankApi;
+import designpatterns.adapter.bankPlatforms.ICICIBankApi;
 
 public class ICICIBankAPIAdapter implements BankAPIAdapter {
 
-    private ICICIBankApi iciciBankApi;
+    private final ICICIBankApi iciciBankApi;
 
     public ICICIBankAPIAdapter() {
         this.iciciBankApi = new ICICIBankApi();
@@ -17,17 +17,11 @@ public class ICICIBankAPIAdapter implements BankAPIAdapter {
 
     @Override
     public boolean authenticate() {
-        if(iciciBankApi.checkUser() == 1)
-            return true;
-        else
-            return false;
+        return iciciBankApi.checkUser() == 1;
     }
 
     @Override
     public boolean transaction() {
-        if(iciciBankApi.transfer() == 1)
-            return true;
-        else
-            return false;
+        return iciciBankApi.transfer() == 1;
     }
 }

@@ -2,15 +2,15 @@ package designpatterns.adapter.bankPlatforms;
 
 public class ICICIBankApi {
 
-    public float queryBalance(){
+    public float queryBalance() {
         return 0.0f;
     }
 
-    public int checkUser(){
+    public int checkUser() {
         return 1;
     }
 
-    public int transfer(){
+    public int transfer() {
         return 1;
     }
 }
