@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LocalTrainRegistry {
-    private Map<String, LocalTrain> registry;
+    private final Map<String, LocalTrain> registry;
 
     public LocalTrainRegistry() {
         this.registry = new HashMap<>();

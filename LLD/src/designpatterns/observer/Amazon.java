@@ -1,7 +1,5 @@
 package designpatterns.observer;
 
-import designpatterns.singleton.SingletonInMultiThreading;
-
 import java.util.ArrayList;
 import java.util.List;
 
